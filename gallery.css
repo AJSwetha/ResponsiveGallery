@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    animation:header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-80%);
+    }
+  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 0px;
+}
+.column{
+   flex:30%;
+   max-width:25%;
+   padding:0px 4px;
+}
+.column img{
+    margin-top:8px;
+    vertical-align: middle;
+    width: 100%;
+    transition:.6s;
+}
+.horizontalimg{
+    height:280px;
+}
+.verticalimg{
+    height:380px;
+}
+
+.column img:hover{
+    box-shadow:6px 5px 5px rgba(0,0,0,.7);
+}
+/* 800px kulla varum pothu img 2varum 50% width */
+@media screen and (max-width:800px){   
+    .column{
+        flex:80%;
+        max-width:50%;
+    }
+}
+/* 600px kulla varum pothu img 1varum 100% width */
+@media screen and (max-width:600px){
+    .column{
+        flex:100%;
+        max-width:100%;
+    }
+}
